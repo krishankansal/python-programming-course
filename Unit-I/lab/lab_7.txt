@@ -1,0 +1,5 @@
+| Operator | Meaning     | Description                                            | Example                  | Result  |
+| -------- | ----------- | ------------------------------------------------------ | ------------------------ | ------- |
+| `and`    | Logical AND | Returns `True` if **both** conditions are `True`       | `(10 > 5) and (20 > 15)` | `True`  |
+| `or`     | Logical OR  | Returns `True` if **at least one** condition is `True` | `(10 > 15) or (20 > 15)` | `True`  |
+| `not`    | Logical NOT | Reverses the Boolean value                             | `not(10 > 5)`            | `False` |

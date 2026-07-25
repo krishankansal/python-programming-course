@@ -1,0 +1,15 @@
+Exercise 1: Student Percentage Calculator
+
+Write a program to accept the marks obtained and total marks of a student. Calculate and display the percentage.
+
+Exercise 2: Simple Interest Calculator
+
+Write a program to accept the principal amount, rate of interest, and time period. Calculate and display the Simple Interest and the Total Amount.
+
+Exercise 3: Temperature Converter
+
+Write a program to accept the temperature in Celsius. Convert it into Fahrenheit and display the result.
+
+Exercise 4: GST Bill Calculator
+
+Write a program to accept the price of a product and the GST percentage. Calculate the GST amount and the final bill amount.
