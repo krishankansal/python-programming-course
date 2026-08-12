@@ -16,6 +16,7 @@ print("----------------")
 for i in range(1, 11, 2):
     print(i)
 
+
 # Key Notes
 # 1. range() generates a sequence of numbers.
 # 2. range(stop) generates numbers from 0 to stop - 1.

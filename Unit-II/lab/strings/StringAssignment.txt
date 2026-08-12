@@ -1,0 +1,139 @@
+Assignment Questions
+Q1. Reverse a String
+
+Write a Python program to input a string and display its reverse.
+
+Q2. Check Palindrome
+
+Write a Python program to check whether a given string is a palindrome or not.
+
+Q3. Count Vowels and Consonants
+
+Write a Python program to count the number of vowels and consonants in a given string.
+
+Q4. Count Digits, Alphabets, Spaces and Special Characters
+
+Write a Python program to count:
+
+Alphabets
+Digits
+Spaces
+Special characters
+Q5. Count Occurrences of a Character
+
+Write a Python program to count the number of occurrences of a given character in a string.
+
+Q6. Replace a Word
+
+Write a Python program to replace one word with another in a given sentence.
+
+Example:
+
+Input :
+I like Python
+
+Replace :
+Python
+
+With :
+Java
+
+Output :
+I like Java
+Q7. Remove Extra Spaces
+
+Write a Python program to remove leading and trailing spaces from a string.
+
+Q8. Convert Sentence into Title Case
+
+Write a Python program to convert a sentence into title case.
+
+Example:
+
+Input :
+welcome to python programming
+
+Output :
+Welcome To Python Programming
+Q9. Check Starting and Ending Word
+
+Write a Python program to check whether a string:
+
+starts with a given word.
+ends with a given word.
+Q10. Split and Join a String
+
+Write a Python program to:
+
+Split a sentence into words.
+Join the words using a hyphen (-).
+
+Example:
+
+Input :
+Python is easy
+
+Output :
+Python-is-easy
+Q11. Check Email Address
+
+Write a Python program to check whether an email address contains:
+
+'@'
+'.com'
+Q12. Create a Student Report
+
+Write a Python program to display the following information using string formatting:
+
+Name
+Roll Number
+Course
+Percentage
+
+Sample Output:
+
+----- Student Report -----
+
+Name        : Aman
+Roll Number : 101
+Course      : BCA
+Percentage  : 87.5%
+Q13. Count Words
+
+Write a Python program to count the total number of words in a sentence.
+
+Example:
+
+Input :
+Python programming is very easy
+
+Output :
+Total Words = 5
+Q14. Find the Longest Word
+
+Write a Python program to find the longest word in a sentence.
+
+Q15. Display Character Frequency
+
+Write a Python program to display the frequency of each character in a string.
+
+Example:
+
+Input :
+apple
+
+Output :
+a : 1
+p : 2
+l : 1
+e : 1
+Learning Outcomes
+
+After completing this assignment, students will be able to:
+
+Create and manipulate strings in Python.
+Apply indexing and slicing techniques.
+Use built-in string functions and methods.
+Perform searching, replacing, splitting, and joining operations.
+Format strings using different formatting techniques.
+Solve real-world text-processing problems using Python.
