@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Programming | MCA III Semester</title>
+
+<style>
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f5f7fb;
+        color: #172033;
+    }
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(135deg, #111827 0%, #1e3a8a 55%, #0f766e 100%);
+        color: white;
+        padding: 65px 20px 70px;
+        text-align: center;
+    }
+
+    .hero:before,
+    .hero:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.08);
+    }
+
+    .hero:before {
+        width: 260px;
+        height: 260px;
+        top: -130px;
+        left: -70px;
+    }
+
+    .hero:after {
+        width: 340px;
+        height: 340px;
+        right: -120px;
+        bottom: -180px;
+    }
+
+    .python-icon {
+        font-size: 62px;
+        margin-bottom: 8px;
+    }
+
+    .hero h1 {
+        position: relative;
+        margin: 0;
+        font-size: clamp(32px, 6vw, 56px);
+        letter-spacing: 1px;
+    }
+
+    .hero h2 {
+        position: relative;
+        margin: 10px 0 8px;
+        font-weight: 500;
+        font-size: clamp(19px, 3vw, 28px);
+    }
+
+    .hero p {
+        position: relative;
+        margin: 14px auto 0;
+        max-width: 720px;
+        font-size: 16px;
+        opacity: 0.9;
+    }
+
+    .container {
+        width: min(1120px, 92%);
+        margin: -35px auto 45px;
+        position: relative;
+    }
+
+    .welcome {
+        background: white;
+        border-radius: 18px;
+        padding: 24px 28px;
+        box-shadow: 0 12px 35px rgba(15, 23, 42, 0.12);
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    .welcome strong {
+        color: #1e3a8a;
+    }
+
+    .section-title {
+        text-align: center;
+        margin: 35px 0 18px;
+    }
+
+    .section-title h2 {
+        margin: 0 0 6px;
+        font-size: 28px;
+    }
+
+    .section-title p {
+        margin: 0;
+        color: #667085;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        min-height: 185px;
+        padding: 24px;
+        background: white;
+        border-radius: 16px;
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid #e6eaf0;
+        box-shadow: 0 5px 18px rgba(15, 23, 42, 0.07);
+        transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 14px 30px rgba(15, 23, 42, 0.13);
+        border-color: #93c5fd;
+    }
+
+    .icon {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .card h3 {
+        margin: 0 0 8px;
+        font-size: 21px;
+    }
+
+    .card p {
+        margin: 0;
+        color: #667085;
+        line-height: 1.5;
+        flex: 1;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 17px;
+        padding: 9px 14px;
+        border-radius: 9px;
+        background: #eef4ff;
+        color: #1d4ed8;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .highlight {
+        background: linear-gradient(135deg, #eff6ff, #ecfeff);
+        border: 1px solid #bfdbfe;
+    }
+
+    .notice {
+        margin-top: 28px;
+        padding: 20px 22px;
+        background: #fff7ed;
+        border-left: 5px solid #f97316;
+        border-radius: 12px;
+        color: #7c2d12;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px 15px 35px;
+        color: #667085;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #1d4ed8;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+        .hero { padding: 45px 16px 55px; }
+        .container { width: 94%; }
+        .welcome { padding: 20px; }
+        .card { min-height: 165px; }
+    }
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="python-icon">🐍</div>
+    <h1>Python Programming</h1>
+    <h2>MCA III Semester</h2>
+    <p>Learn • Code • Practice • Build</p>
+</header>
+
+<main class="container">
+
+    <section class="welcome">
+        <strong>Welcome to the Python Programming Course Portal</strong><br>
+        Your central place for laboratory programs, course material, viva preparation,
+        presentations and syllabus resources.
+    </section>
+
+    <div class="section-title">
+        <h2>📚 Course Resources</h2>
+        <p>Everything you need for your Python Programming course</p>
+    </div>
+
+    <div class="grid">
+
+        <a class="card highlight"
+           href="https://github.com/krishankansal/python-programming-course/tree/main/Unit-I/lab"
+           target="_blank">
+            <div class="icon">🧪</div>
+            <h3>Unit I — Laboratory</h3>
+            <p>Access Python laboratory programs from Lab 1 to Lab 23.</p>
+            <span class="button">Open Labs →</span>
+        </a>
+
+        <a class="card"
+           href="https://github.com/krishankansal/python-programming-course/tree/main/Unit-I/lab_viva_questions"
+           target="_blank">
+            <div class="icon">❓</div>
+            <h3>Unit I — Lab Viva</h3>
+            <p>Prepare important viva questions related to the Unit I laboratory work.</p>
+            <span class="button">Prepare Viva →</span>
+        </a>
+
+        <a class="card"
+           href="https://github.com/krishankansal/python-programming-course/blob/main/Unit-I/ppt/Unit1_Python_Programming_BCA-3007T.pdf"
+           target="_blank">
+            <div class="icon">📖</div>
+            <h3>Unit I — Study Material</h3>
+            <p>Access the Unit I Python Programming presentation and learning material.</p>
+            <span class="button">Open Material →</span>
+        </a>
+
+        <a class="card highlight"
+           href="https://github.com/krishankansal/python-programming-course/tree/main/Unit-II/lab/strings"
+           target="_blank">
+            <div class="icon">🔤</div>
+            <h3>Unit II — Strings</h3>
+            <p>Access the current Unit II string laboratory programs, including Labs 24–33.</p>
+            <span class="button">Open Unit II →</span>
+        </a>
+
+        <a class="card"
+           href="https://github.com/krishankansal/python-programming-course/tree/main/syllabus"
+           target="_blank">
+            <div class="icon">📄</div>
+            <h3>Course Syllabus</h3>
+            <p>View the official BMC301 Python Programming syllabus.</p>
+            <span class="button">View Syllabus →</span>
+        </a>
+
+        <a class="card"
+           href="https://github.com/krishankansal/python-programming-course"
+           target="_blank">
+            <div class="icon">💻</div>
+            <h3>GitHub Repository</h3>
+            <p>Explore the complete Python Programming course repository and all available resources.</p>
+            <span class="button">Open GitHub →</span>
+        </a>
+
+    </div>
+
+    <div class="section-title">
+        <h2>🚀 Keep Learning</h2>
+        <p>Practice regularly and keep your laboratory file updated.</p>
+    </div>
+
+    <div class="notice">
+        <strong>💡 Lab Practice Tip:</strong>
+        Don't just copy the programs. Run each program, understand the output,
+        modify the values, and try at least one small variation yourself.
+    </div>
+
+</main>
+
+<footer>
+    MCA III Semester • Python Programming<br>
+    <a href="https://github.com/krishankansal/python-programming-course" target="_blank">
+        Python Programming Course Repository
+    </a>
+</footer>
+
+</body>
+</html>
