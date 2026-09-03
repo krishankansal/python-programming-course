@@ -24,13 +24,8 @@ print("'" + text.rstrip() + "'")
 print("\nreplace() Method:")
 print(text.replace("Python", "Java"))
 
-# 5. find() Method
-print("\nfind() Method:")
-print("Position of 'Programming':", text.find("Programming"))
 
-print("Position of 'Java':", text.find("Java"))
-
-# 6. count() Method
+# 5. count() Method
 print("\ncount() Method:")
 print("Count of 'Python':", text.count("Python"))
 

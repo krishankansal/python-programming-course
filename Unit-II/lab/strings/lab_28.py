@@ -37,7 +37,7 @@ print("*".join(text))
 
 
 # Example 6: Creating a file path
-folders = ["Users", "Krishan", "Documents", "Python"]
+folders = ["Users", "Ram", "Documents", "Python"]
 
 print("\nFile Path:")
 print("/".join(folders))

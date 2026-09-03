@@ -5,6 +5,7 @@
 # 1. Creating a list
 marks = [78, 85, 92, 67, 88, 74]
 
+
 print("Original List:")
 print(marks)
 

@@ -25,9 +25,9 @@ print("\nMulti-line String:")
 print(multiline_string)
 
 # 5. Raw string
-# # raw_string = r"C:\Program Files\Python\Scripts"
-# print("\nRaw String:")
-# print(raw_string)
+raw_string = r"C:\Program Files\Python\Scripts"
+print("\nRaw String:")
+print(raw_string)
 
 # Key Notes
 # 1. A string is a sequence of characters enclosed within quotes.

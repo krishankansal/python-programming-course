@@ -1,12 +1,7 @@
-l = [1,2,3,4,5]
-print(l)
+# to print the elements of a list
 
-x = list("Hello")
-print(x)
+l= [-1, -2, -3, 4, 5]
 
-y = list(range(10))
+for i in l:
+    print(i)
 
-print(y)
-
-z = []
-print(z)

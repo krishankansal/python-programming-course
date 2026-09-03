@@ -1,7 +1,8 @@
-lst = [-9, 45, 88, -1,45, 0, 12,89,78,45,3456]
+# create a list containing squares of numbers from 1 to 10
 
-print(lst[-1])  # Accessing the element at index 3
+lst = []
 
-print(type(lst))  # Printing the type of the list
-for x in range(len(lst)):
-    print(lst[x])  # Accessing each element in the list using a for loop
+for i in range(1, 11):
+    lst.append(i**2)
+
+print(lst)
