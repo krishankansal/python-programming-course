@@ -1,14 +1,10 @@
-# Lets move one step further and cover the topic
+# Lab No. 89: Closures and Returning a Function
 #
-# 3. Function can also return a function.
-# This is also knows as Closures and Factory Functions.
-#
-# However, for the case of closures, one must use the nested functions.
-#
-# The following are the conditions that are required to be met in order to create a closure in Python:
-#
-# 	1 There must be a nested function
-# 	2. The enclosing function has to return the nested function
+# Objective:
+# To understand how a nested function can be returned from an outer
+# function and used outside the scope of the outer function.
+
+# Program
 
 def outer(text):
     text = text
@@ -16,14 +12,19 @@ def outer(text):
     def inner():
         print(text)
 
-    return inner  # Note we are returning function WITHOUT parenthesis
+    return inner  # Returning the function without parentheses
 
 
 funct = outer('Example of closure')
 funct()
 
-# **************************************************
-# As observed from above code, closures help to invoke function outside their scope.
-# The function inner function has its scope only inside the outer Function.
-# But with the use of closures we can easily extend its scope to invoke a function outside
-# its scope.
+
+# -----------------------------
+# Key Points
+# -----------------------------
+# 1. A closure requires a nested function.
+# 2. The enclosing function returns the nested function.
+# 3. inner is returned without parentheses because the function itself is returned.
+# 4. The returned function is assigned to funct.
+# 5. funct() can then be called outside outer().
+# 6. The inner function retains access to text from the enclosing scope.

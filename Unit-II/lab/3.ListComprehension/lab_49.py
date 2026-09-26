@@ -1,35 +1,37 @@
-# A list comprehension is a concise way to create lists using a single line of code.
-# It combines a for loop, optional if conditions, and an expression.
+# Lab No. 49: Introduction to List Comprehension
 #
-# General syntax:
-# [expression for item in iterable if condition]
+# Objective:
+# To understand list comprehension and compare it with the traditional
+# for loop method for creating lists.
 
+# Program
 
 lst = []
 
-for x in range(1,11):
+for x in range(1, 11):
     lst.append(x)
-print(lst)  # Output :[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-# list of numbers 0 - 10
-lst = [x for x in range(1,11)]
-print(lst)  # Output :[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(lst)
 
-#
+# List of numbers from 1 to 10
+lst = [x for x in range(1, 11)]
+print(lst)
 
+# Creating a list of squares using a traditional for loop
 squares = []
+
 for i in range(10):
     squares.append(i * i)
 
-# print(squares)
-# #Output : [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-#
-squares = [i*i for i in range(10)]
+# Creating the same list using list comprehension
+squares = [i * i for i in range(10)]
 print(squares)
-# #Output : [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 
-
-
-
-
+# -----------------------------
+# Key Points
+# -----------------------------
+# 1. List comprehension provides a concise way to create a list.
+# 2. The basic syntax is [expression for item in iterable].
+# 3. A traditional for loop can be replaced by list comprehension.
+# 4. List comprehension can create calculated values such as squares.

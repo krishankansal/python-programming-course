@@ -3,7 +3,7 @@
 
 import random
 
-secret = random.randint(100, 999)
+secret = random.randint(10, 99)
 chance = 1
 
 print("Guess the 3-digit secret number.")
@@ -14,7 +14,7 @@ while chance <= 10:
 
     guess = int(input(f"Chance {chance}: Enter your guess: "))
 
-    if guess < 100 or guess > 999:
+    if guess < 10 or guess > 99:
         print("Invalid Input! Please enter a 3-digit number.")
         continue
 

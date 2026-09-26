@@ -1,6 +1,6 @@
 """
 Lab 1: Variables and Data Types in Python
-Objective
+Objective Objective
 To learn how to declare variables of different data types in Python, display their values, and determine the data type of each variable using the type() function.
 """
 name = "Rox"

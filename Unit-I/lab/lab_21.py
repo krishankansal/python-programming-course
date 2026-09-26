@@ -3,10 +3,10 @@
 
 import random
 
-secret = random.randint(100, 999)
+secret = random.randint(10, 99)
 chance = 1
 
-print("Guess the 3-digit secret number.")
+print("Guess the 2-digit secret number.")
 print("You have only 6 chances.\n")
 
 while chance <= 6:

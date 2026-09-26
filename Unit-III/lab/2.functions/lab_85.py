@@ -1,10 +1,10 @@
-# We have so far studied that
-# 1. Function can be assigned to a variable.
+# Lab No. 85: Nested Functions
+#
+# Objective:
+# To understand how a function can be defined inside another function
+# and how the outer function can call the inner function.
 
-# now we will look into
-
-# 2. Function can be declared with in some function(nested function).
-# 	or Function inside Function
+# Program
 
 def outer():
 
@@ -18,3 +18,13 @@ def outer():
 
 
 outer()
+
+
+# -----------------------------
+# Key Points
+# -----------------------------
+# 1. A function can be defined inside another function.
+# 2. The inner function is called a nested function.
+# 3. inner() is defined inside outer().
+# 4. The outer function can call the inner function.
+# 5. Calling outer() executes the statements in outer and then inner.

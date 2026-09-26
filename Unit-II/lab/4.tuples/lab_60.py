@@ -1,10 +1,11 @@
-# Lab 54: Tuple Operations
+# Lab No. 60: Tuple Operations
+#
 # Objective:
 # To learn different operations that can be performed on tuples.
 
+# Program
 
-# 1. Tuple Concatenation
-
+# Tuple Concatenation
 tuple1 = (1, 2, 3)
 tuple2 = (4, 5, 6)
 
@@ -19,9 +20,7 @@ print(tuple2)
 print("\nAfter Concatenation:")
 print(result)
 
-
-# 2. Tuple Repetition
-
+# Tuple Repetition
 numbers = (1, 2, 3)
 
 result = numbers * 3
@@ -32,9 +31,7 @@ print(numbers)
 print("\nAfter Repetition:")
 print(result)
 
-
-# 3. Membership Operator
-
+# Membership Operator
 fruits = ("Apple", "Banana", "Mango", "Orange")
 
 print("\nFruits:")
@@ -46,18 +43,14 @@ print("Mango" in fruits)
 print("\nIs Grapes present?")
 print("Grapes" in fruits)
 
-
-# 4. Not-in Operator
-
+# Not-in Operator
 print("\nIs Grapes not present?")
 print("Grapes" not in fruits)
 
 print("\nIs Apple not present?")
 print("Apple" not in fruits)
 
-
-# 5. Comparing Tuples
-
+# Comparing Tuples
 tuple1 = (10, 20, 30)
 tuple2 = (10, 20, 40)
 
@@ -76,18 +69,14 @@ print(tuple1 < tuple2)
 print("\nIs Tuple 1 greater than Tuple 2?")
 print(tuple1 > tuple2)
 
-
-# 6. Comparing Two Tuples with the Same Values
-
+# Comparing Two Tuples with the Same Values
 tuple1 = (10, 20, 30)
 tuple2 = (10, 20, 30)
 
 print("\nAre these tuples equal?")
 print(tuple1 == tuple2)
 
-
-# 7. Finding the Length of a Tuple
-
+# Finding the Length of a Tuple
 numbers = (10, 20, 30, 40, 50)
 
 print("\nNumbers:")
@@ -96,9 +85,7 @@ print(numbers)
 print("\nLength of Tuple:")
 print(len(numbers))
 
-
-# 8. Combining Different Operations
-
+# Combining Different Operations
 a = ("Python", "Java")
 b = ("C", "C++")
 
@@ -112,7 +99,9 @@ print("\nRepeated Tuple:")
 print(repeated)
 
 
-# Key Notes
+# -----------------------------
+# Key Points
+# -----------------------------
 # 1. The + operator is used to concatenate two tuples.
 # 2. The * operator is used to repeat a tuple.
 # 3. The in operator checks whether an element exists in a tuple.
@@ -121,5 +110,4 @@ print(repeated)
 # 6. Tuple comparison is performed element by element.
 # 7. len() returns the number of elements in a tuple.
 # 8. Tuple operations do not modify the original tuple.
-# 9. Since tuples are immutable, operations such as + and *
-#    create a new tuple instead of changing the existing one.
+# 9. Since tuples are immutable, + and * create new tuples.
