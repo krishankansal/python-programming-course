@@ -3,309 +3,257 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Python Programming | MCA III Semester</title>
-
+<title>Python Programming Course - Lab Index</title>
 <style>
+    :root {
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --accent: #2563eb;
+        --accent-dark: #1d4ed8;
+        --border: #e5e7eb;
+        --note-bg: #fff7ed;
+        --note-border: #fed7aa;
+    }
     * { box-sizing: border-box; }
-
     body {
         margin: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
-        background: #f5f7fb;
-        color: #172033;
-    }
-
-    .hero {
-        position: relative;
-        overflow: hidden;
-        background: linear-gradient(135deg, #111827 0%, #1e3a8a 55%, #0f766e 100%);
-        color: white;
-        padding: 65px 20px 70px;
-        text-align: center;
-    }
-
-    .hero:before,
-    .hero:after {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        background: rgba(255,255,255,0.08);
-    }
-
-    .hero:before {
-        width: 260px;
-        height: 260px;
-        top: -130px;
-        left: -70px;
-    }
-
-    .hero:after {
-        width: 340px;
-        height: 340px;
-        right: -120px;
-        bottom: -180px;
-    }
-
-    .python-icon {
-        font-size: 62px;
-        margin-bottom: 8px;
-    }
-
-    .hero h1 {
-        position: relative;
-        margin: 0;
-        font-size: clamp(32px, 6vw, 56px);
-        letter-spacing: 1px;
-    }
-
-    .hero h2 {
-        position: relative;
-        margin: 10px 0 8px;
-        font-weight: 500;
-        font-size: clamp(19px, 3vw, 28px);
-    }
-
-    .hero p {
-        position: relative;
-        margin: 14px auto 0;
-        max-width: 720px;
-        font-size: 16px;
-        opacity: 0.9;
-    }
-
-    .container {
-        width: min(1120px, 92%);
-        margin: -35px auto 45px;
-        position: relative;
-    }
-
-    .welcome {
-        background: white;
-        border-radius: 18px;
-        padding: 24px 28px;
-        box-shadow: 0 12px 35px rgba(15, 23, 42, 0.12);
-        margin-bottom: 28px;
-        text-align: center;
-    }
-
-    .welcome strong {
-        color: #1e3a8a;
-    }
-
-    .section-title {
-        text-align: center;
-        margin: 35px 0 18px;
-    }
-
-    .section-title h2 {
-        margin: 0 0 6px;
-        font-size: 28px;
-    }
-
-    .section-title p {
-        margin: 0;
-        color: #667085;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 18px;
-    }
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        min-height: 185px;
-        padding: 24px;
-        background: white;
-        border-radius: 16px;
-        text-decoration: none;
-        color: inherit;
-        border: 1px solid #e6eaf0;
-        box-shadow: 0 5px 18px rgba(15, 23, 42, 0.07);
-        transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-    }
-
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 14px 30px rgba(15, 23, 42, 0.13);
-        border-color: #93c5fd;
-    }
-
-    .icon {
-        font-size: 34px;
-        margin-bottom: 10px;
-    }
-
-    .card h3 {
-        margin: 0 0 8px;
-        font-size: 21px;
-    }
-
-    .card p {
-        margin: 0;
-        color: #667085;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
         line-height: 1.5;
-        flex: 1;
     }
-
-    .button {
-        display: inline-block;
-        margin-top: 17px;
-        padding: 9px 14px;
-        border-radius: 9px;
-        background: #eef4ff;
-        color: #1d4ed8;
-        font-weight: 600;
-        font-size: 14px;
-        text-align: center;
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 32px 20px 50px;
     }
-
-    .highlight {
-        background: linear-gradient(135deg, #eff6ff, #ecfeff);
-        border: 1px solid #bfdbfe;
+    header {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 28px;
+        margin-bottom: 24px;
+        box-shadow: 0 3px 12px rgba(0,0,0,.05);
     }
-
-    .notice {
-        margin-top: 28px;
-        padding: 20px 22px;
-        background: #fff7ed;
-        border-left: 5px solid #f97316;
-        border-radius: 12px;
+    h1 { margin: 0 0 8px; font-size: 30px; }
+    .subtitle { color: var(--muted); margin: 0; }
+    .unit {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 24px;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 12px rgba(0,0,0,.04);
+    }
+    h2 {
+        margin: 0 0 18px;
+        font-size: 23px;
+        border-bottom: 2px solid var(--border);
+        padding-bottom: 10px;
+    }
+    h3 { margin: 20px 0 10px; font-size: 18px; }
+    .labs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 9px;
+    }
+    a.lab {
+        display: block;
+        text-decoration: none;
+        color: var(--accent);
+        background: #f8fafc;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 9px 12px;
+        transition: .15s ease;
+    }
+    a.lab:hover {
+        color: white;
+        background: var(--accent);
+        border-color: var(--accent);
+        transform: translateY(-1px);
+    }
+    .note {
+        background: var(--note-bg);
+        border: 1px solid var(--note-border);
+        border-radius: 10px;
+        padding: 14px 16px;
+        margin-top: 18px;
         color: #7c2d12;
     }
-
     footer {
         text-align: center;
-        padding: 25px 15px 35px;
-        color: #667085;
+        color: var(--muted);
+        margin-top: 28px;
         font-size: 14px;
-    }
-
-    footer a {
-        color: #1d4ed8;
-        text-decoration: none;
-        font-weight: 600;
-    }
-
-    @media (max-width: 600px) {
-        .hero { padding: 45px 16px 55px; }
-        .container { width: 94%; }
-        .welcome { padding: 20px; }
-        .card { min-height: 165px; }
     }
 </style>
 </head>
-
 <body>
+<div class="container">
 
-<header class="hero">
-    <div class="python-icon">🐍</div>
-    <h1>Python Programming</h1>
-    <h2>MCA III Semester</h2>
-    <p>Learn • Code • Practice • Build</p>
+<header>
+    <h1>Python Programming Course</h1>
+    <p class="subtitle">Laboratory Programs — Unit-wise Index</p>
+    <p class="subtitle">Repository:
+        <a href="https://github.com/krishankansal/python-programming-course" target="_blank">
+            python-programming-course
+        </a>
+    </p>
 </header>
 
-<main class="container">
+<section class="unit">
+    <h2>Unit-I</h2>
+    <h3>Lab</h3>
+    <div class="labs">
+        <a class="lab" href="Unit-I/lab/lab_1.py">Lab 1</a>
+        <a class="lab" href="Unit-I/lab/lab_2.py">Lab 2</a>
+        <a class="lab" href="Unit-I/lab/lab_3.py">Lab 3</a>
+        <a class="lab" href="Unit-I/lab/lab_4.py">Lab 4</a>
+        <a class="lab" href="Unit-I/lab/lab_5.py">Lab 5</a>
+        <a class="lab" href="Unit-I/lab/lab_6.py">Lab 6</a>
+        <a class="lab" href="Unit-I/lab/lab_7.py">Lab 7</a>
+        <a class="lab" href="Unit-I/lab/lab_8.py">Lab 8</a>
+        <a class="lab" href="Unit-I/lab/lab_9.py">Lab 9</a>
+        <a class="lab" href="Unit-I/lab/lab_10.py">Lab 10</a>
+        <a class="lab" href="Unit-I/lab/lab_11.py">Lab 11</a>
+        <a class="lab" href="Unit-I/lab/lab_12.py">Lab 12</a>
+        <a class="lab" href="Unit-I/lab/lab_13.py">Lab 13</a>
+        <a class="lab" href="Unit-I/lab/lab_14.py">Lab 14</a>
+        <a class="lab" href="Unit-I/lab/lab_15.py">Lab 15</a>
+        <a class="lab" href="Unit-I/lab/lab_16.py">Lab 16</a>
+        <a class="lab" href="Unit-I/lab/lab_17.py">Lab 17</a>
+        <a class="lab" href="Unit-I/lab/lab_18.py">Lab 18</a>
+        <a class="lab" href="Unit-I/lab/lab_19.py">Lab 19</a>
+        <a class="lab" href="Unit-I/lab/lab_20.py">Lab 20</a>
+        <a class="lab" href="Unit-I/lab/lab_21.py">Lab 21</a>
+        <a class="lab" href="Unit-I/lab/lab_22.py">Lab 22</a>
+        <a class="lab" href="Unit-I/lab/lab_23.py">Lab 23</a>
+    </div>
+</section>
 
-    <section class="welcome">
-        <strong>Welcome to the Python Programming Course Portal</strong><br>
-        Your central place for laboratory programs, course material, viva preparation,
-        presentations and syllabus resources.
-    </section>
+<section class="unit">
+    <h2>Unit-II</h2>
 
-    <div class="section-title">
-        <h2>📚 Course Resources</h2>
-        <p>Everything you need for your Python Programming course</p>
+    <h3>1. String</h3>
+    <div class="labs">
+        <a class="lab" href="Unit-II/lab/1.string/lab_24.py">Lab 24</a>
+        <a class="lab" href="Unit-II/lab/1.string/lab_25.py">Lab 25</a>
+        <a class="lab" href="Unit-II/lab/1.string/lab_26.py">Lab 26</a>
+        <a class="lab" href="Unit-II/lab/1.string/lab_27.py">Lab 27</a>
+        <a class="lab" href="Unit-II/lab/1.string/lab_28.py">Lab 28</a>
+        <a class="lab" href="Unit-II/lab/1.string/lab_29.py">Lab 29</a>
+        <a class="lab" href="Unit-II/lab/1.string/lab_30.py">Lab 30</a>
+        <a class="lab" href="Unit-II/lab/1.string/lab_31.py">Lab 31</a>
+        <a class="lab" href="Unit-II/lab/1.string/lab_32.py">Lab 32</a>
+        <a class="lab" href="Unit-II/lab/1.string/lab_33.py">Lab 33</a>
     </div>
 
-    <div class="grid">
-
-        <a class="card highlight"
-           href="https://github.com/krishankansal/python-programming-course/tree/main/Unit-I/lab"
-           target="_blank">
-            <div class="icon">🧪</div>
-            <h3>Unit I — Laboratory</h3>
-            <p>Access Python laboratory programs from Lab 1 to Lab 23.</p>
-            <span class="button">Open Labs →</span>
-        </a>
-
-        <a class="card"
-           href="https://github.com/krishankansal/python-programming-course/tree/main/Unit-I/lab_viva_questions"
-           target="_blank">
-            <div class="icon">❓</div>
-            <h3>Unit I — Lab Viva</h3>
-            <p>Prepare important viva questions related to the Unit I laboratory work.</p>
-            <span class="button">Prepare Viva →</span>
-        </a>
-
-        <a class="card"
-           href="https://github.com/krishankansal/python-programming-course/blob/main/Unit-I/ppt/Unit1_Python_Programming_BCA-3007T.pdf"
-           target="_blank">
-            <div class="icon">📖</div>
-            <h3>Unit I — Study Material</h3>
-            <p>Access the Unit I Python Programming presentation and learning material.</p>
-            <span class="button">Open Material →</span>
-        </a>
-
-        <a class="card highlight"
-           href="https://github.com/krishankansal/python-programming-course/tree/main/Unit-II/lab/strings"
-           target="_blank">
-            <div class="icon">🔤</div>
-            <h3>Unit II — Strings</h3>
-            <p>Access the current Unit II string laboratory programs, including Labs 24–33.</p>
-            <span class="button">Open Unit II →</span>
-        </a>
-
-        <a class="card highlight"
-           href="https://github.com/krishankansal/python-programming-course/tree/main/Unit-II/lab/lists"
-           target="_blank">
-            <div class="icon">📋</div>
-            <h3>Unit II — Lists</h3>
-            <p>Access the Python List programs and laboratory material added for Unit II.</p>
-            <span class="button">Open Lists →</span>
-        </a>
-
-        <a class="card"
-           href="https://github.com/krishankansal/python-programming-course/tree/main/syllabus"
-           target="_blank">
-            <div class="icon">📄</div>
-            <h3>Course Syllabus</h3>
-            <p>View the official BMC301 Python Programming syllabus.</p>
-            <span class="button">View Syllabus →</span>
-        </a>
-
-        <a class="card"
-           href="https://github.com/krishankansal/python-programming-course"
-           target="_blank">
-            <div class="icon">💻</div>
-            <h3>GitHub Repository</h3>
-            <p>Explore the complete Python Programming course repository and all available resources.</p>
-            <span class="button">Open GitHub →</span>
-        </a>
-
+    <h3>2. List</h3>
+    <div class="labs">
+        <a class="lab" href="Unit-II/lab/2.list/lab_34.py">Lab 34</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_35.py">Lab 35</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_36.py">Lab 36</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_37.py">Lab 37</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_38.py">Lab 38</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_39.py">Lab 39</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_40.py">Lab 40</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_41.py">Lab 41</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_42.py">Lab 42</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_43.py">Lab 43</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_44.py">Lab 44</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_45.py">Lab 45</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_46.py">Lab 46</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_47.py">Lab 47</a>
+        <a class="lab" href="Unit-II/lab/2.list/lab_48.py">Lab 48</a>
     </div>
 
-    <div class="section-title">
-        <h2>🚀 Keep Learning</h2>
-        <p>Practice regularly and keep your laboratory file updated.</p>
+    <h3>3. List Comprehension</h3>
+    <div class="labs">
+        <a class="lab" href="Unit-II/lab/ListComprehension/lab_49.py">Lab 49</a>
+        <a class="lab" href="Unit-II/lab/ListComprehension/lab_50.py">Lab 50</a>
+        <a class="lab" href="Unit-II/lab/ListComprehension/lab_51.py">Lab 51</a>
+        <a class="lab" href="Unit-II/lab/ListComprehension/lab_52.py">Lab 52</a>
+        <a class="lab" href="Unit-II/lab/ListComprehension/lab_53.py">Lab 53</a>
+        <a class="lab" href="Unit-II/lab/ListComprehension/lab_54.py">Lab 54</a>
+        <a class="lab" href="Unit-II/lab/ListComprehension/lab_55.py">Lab 55</a>
+        <a class="lab" href="Unit-II/lab/ListComprehension/lab_56.py">Lab 56</a>
+        <a class="lab" href="Unit-II/lab/ListComprehension/lab_57.py">Lab 57</a>
     </div>
 
-    <div class="notice">
-        <strong>💡 Lab Practice Tip:</strong>
-        Don't just copy the programs. Run each program, understand the output,
-        modify the values, and try at least one small variation yourself.
+    <h3>4. Tuples</h3>
+    <div class="labs">
+        <a class="lab" href="Unit-II/lab/tuples/lab_58.py">Lab 58</a>
+        <a class="lab" href="Unit-II/lab/tuples/lab_59.py">Lab 59</a>
+        <a class="lab" href="Unit-II/lab/tuples/lab_60.py">Lab 60</a>
+        <a class="lab" href="Unit-II/lab/tuples/lab_61.py">Lab 61</a>
+        <a class="lab" href="Unit-II/lab/tuples/lab_62.py">Lab 62</a>
+    </div>
+</section>
+
+<section class="unit">
+    <h2>Unit-III</h2>
+
+    <h3>1. Dictionary</h3>
+    <div class="labs">
+        <a class="lab" href="Unit-III/lab/1.dictionary/lab_63.py">Lab 63</a>
+        <a class="lab" href="Unit-III/lab/1.dictionary/lab_64.py">Lab 64</a>
+        <a class="lab" href="Unit-III/lab/1.dictionary/lab_65.py">Lab 65</a>
+        <a class="lab" href="Unit-III/lab/1.dictionary/lab_66.py">Lab 66</a>
+        <a class="lab" href="Unit-III/lab/1.dictionary/lab_67.py">Lab 67</a>
     </div>
 
-</main>
+    <h3>2. Functions</h3>
+    <div class="labs">
+        <a class="lab" href="Unit-III/lab/2.functions/lab_64.py">Lab 64</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_65.py">Lab 65</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_66.py">Lab 66</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_67.py">Lab 67</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_68.py">Lab 68</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_69.py">Lab 69</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_70.py">Lab 70</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_71.py">Lab 71</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_72.py">Lab 72</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_73.py">Lab 73</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_74.py">Lab 74</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_75.py">Lab 75</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_76.py">Lab 76</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_77.py">Lab 77</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_78.py">Lab 78</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_79.py">Lab 79</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_80.py">Lab 80</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_81.py">Lab 81</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_82.py">Lab 82</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_83.py">Lab 83</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_84.py">Lab 84</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_85.py">Lab 85</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_86.py">Lab 86</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_87.py">Lab 87</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_88.py">Lab 88</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_89.py">Lab 89</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_90.py">Lab 90</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_91.py">Lab 91</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_92.py">Lab 92</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_93.py">Lab 93</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_94.py">Lab 94</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_95.py">Lab 95</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_96.py">Lab 96</a>
+        <a class="lab" href="Unit-III/lab/2.functions/lab_97.py">Lab 97</a>
+    </div>
+
+    <div class="note">
+        <strong>Note:</strong> The current Unit-III folder structure has a numbering overlap:
+        Dictionary is specified as Lab 63–67, while Functions is specified as Lab 64–97.
+        Therefore, Labs 64–67 appear in both sections but point to their respective folders.
+    </div>
+</section>
 
 <footer>
-    MCA III Semester • Python Programming<br>
-    <a href="https://github.com/krishankansal/python-programming-course" target="_blank">
-        Python Programming Course Repository
-    </a>
+    Python Programming Course &nbsp;|&nbsp; Laboratory Index
 </footer>
 
+</div>
 </body>
 </html>
